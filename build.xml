@@ -37,7 +37,7 @@
     <!--任务列表-->
     <target name="run">
         <antcall target="menghunli_test" />
-		<antcall target="menghunli_report/>
+		<antcall target="menghunli_report" />
 		
     </target>
 	
