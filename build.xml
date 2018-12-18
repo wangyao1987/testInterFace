@@ -96,11 +96,11 @@
 	<!--发送邮件操作-->
 	<target name="sendEmail">
 		<mail mailhost="smtp.exmail.qq.com"
-				user="346701339@qq.com"
-				password="!@#QWE1987"   
+				user="weip@youyuan.com"
+				password="Lover2"   
 				mailport="25" 
 				ssl="false"  
-				from="346701339@qq.com"
+				from="weip@youyuan.com"
 				messagemimetype="text/html" 
 				tolist="${mail_to}"
 				subject="${subject.title}">
