@@ -38,7 +38,7 @@
     <target name="run">
         <antcall target="menghunli_test" />
 		<antcall target="menghunli_report" />
-		
+		<antcall target="sendEmail"/>
     </target>
 	
     <!--运行任务-->
