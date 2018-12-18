@@ -96,15 +96,15 @@
 	<!--发送邮件操作-->
 	<target name="sendEmail">
 		<mail mailhost="smtp.exmail.qq.com"
-				user="weip@youyuan.com"
-				password="Lover2"   
+				user="346701339@qq.com"
+				password="!@#QWE1987"   
 				mailport="465" 
 				ssl="true"  
-				from="weip@youyuan.com"
+				from="346701339@qq.com"
 				messagemimetype="text/html" 
 				tolist="${mail_to}"
 				subject="${subject.title}">
-			 <attachments>
+			 <!--attachments >
                 <fileset dir="${jmeter.report.html}">
                     <include name="${menghunli.ReportName}${time}.html" />					
                 </fileset>
@@ -116,15 +116,15 @@
 					<include name="*.png"/>
                 </fileset-->
 				
-            </attachments>
+            <!--/attachments -->
 			
-			<!--message>
+			<message>
 			
 			JP interface_check result detail:&lt;br /&gt;
 			http://${reportHost}/${JPreport} &lt;br /&gt;
 			CN interface_check result detail:&lt;br /&gt;
 			http://${reportHost}/${CNreport} &lt;br /&gt;
-			</message/-->
+			</message>
 		</mail>
 	</target>
 	
