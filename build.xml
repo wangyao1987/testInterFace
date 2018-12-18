@@ -87,7 +87,7 @@
 	<!-- 邮件接收人-->
 	<property name="mail_to" value="weip@youyuan.com,yaow@youyuan.com"/>
 	<!-- 邮件主题 -->
-	<property name="subject.title" value="interface result" />
+	<property name="subject.title" value="${time} 梦婚礼接口扫描结果" />
 	<!-- 指定域名，用于拼接邮件内容-->
 	<property name="reportHost" value="qa.yaowang.123.cn"/>
 	<!-- 指定报告路径及名称，用于拼接邮件内容-->
@@ -118,13 +118,14 @@
 				
             </attachments>
 			
-			<!--message>
+			<message>
+			${time} 梦婚礼接口扫描结果
 			
 			JP interface_check result detail:&lt;br /&gt;
 			http://${reportHost}/${JPreport} &lt;br /&gt;
 			CN interface_check result detail:&lt;br /&gt;
 			http://${reportHost}/${CNreport} &lt;br /&gt;
-			</message-->
+			</message>
 		</mail>
 	</target>
 	
