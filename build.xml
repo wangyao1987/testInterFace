@@ -95,7 +95,7 @@
 	<!--property name="CNreport" value="CN/${CN.ReportName}${time}.html"/-->
 	<!--发送邮件操作-->
 	<target name="sendEmail">
-		<mail mailhost="smtp.exmail.qq.com"
+		<mail mailhost="smtp.qq.com"
 				user="346701339@qq.com"
 				password="!@#QWE1987"   
 				mailport="465" 
