@@ -107,7 +107,7 @@
 			 <attachments >
                 <fileset dir="${jmeter.report.html}">
                     <include name="${menghunli.ReportName}${time}.html" />					
-                </fileset-->
+                </fileset>
 				<!--fileset dir="${CN.jmeter.result.html.dir}">
                     <include name="${CN.ReportName}${time}.html" />					
                 </fileset>
