@@ -26,7 +26,7 @@
     
 
 	<!-- 生成的报告-->  
-    <property name="menghunli.ReportName" value="menghunli_TestReport_" />
+    <property name="menghunli.ReportName" value="menghunli_InterFace_TestReport_" />
     <property name="menghunli.jmeter.result.jtlName" value="${jmeter.report.jtl}/${menghunli.ReportName}${time}.jtl" />
     <property name="menghunli.jmeter.result.htmlName" value="${jmeter.report.html}/${menghunli.ReportName}${time}.html" />
 	<property name="menghunli.report.title" value="${time}接口扫描结果_menghunli"/>
