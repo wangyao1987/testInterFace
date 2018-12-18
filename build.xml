@@ -85,7 +85,7 @@
 	
 	<!--邮件相关配置-->
 	<!-- 邮件接收人-->
-	<property name="mail_to" value="yaow@youyuan.com"/>
+	<property name="mail_to" value="yaow@youyuan.com,wangjf@youyuan.com,xiaohongbin@youyuan.com,weip@youyuan.com"/>
 	<!-- 邮件主题 -->
 	<property name="subject.title" value="${time} 梦婚礼接口扫描结果" />
 	<!-- 指定域名，用于拼接邮件内容-->
