@@ -85,46 +85,46 @@
 	
 	<!--邮件相关配置-->
 	<!-- 邮件接收人-->
-	<property name="mail_to" value="xiaofang.qi@ptmind.com,yin.duan@ptmind.com,zhen.qin@ptmind.com,wang.yao@ptmind.com,yunfei.zhang@ptthink.com,leevis@ptmind.com,bin.wu@ptmind.com,mike@ptthink.com,zhengbo.cheng@ptmind.com"/>
+	<property name="mail_to" value="weip@youyuan.com,yaow@youyuan.com"/>
 	<!-- 邮件主题 -->
 	<property name="subject.title" value="interface result" />
 	<!-- 指定域名，用于拼接邮件内容-->
-	<property name="reportHost" value="qa.wubin.ptmind.cn"/>
+	<property name="reportHost" value="qa.yaowang.123.cn"/>
 	<!-- 指定报告路径及名称，用于拼接邮件内容-->
-	<property name="JPreport" value="JP/${JP.ReportName}${time}.html"/>
-	<property name="CNreport" value="CN/${CN.ReportName}${time}.html"/>
+	<!--property name="JPreport" value="JP/${JP.ReportName}${time}.html"/-->
+	<!--property name="CNreport" value="CN/${CN.ReportName}${time}.html"/-->
 	<!--发送邮件操作-->
 	<target name="sendEmail">
 		<mail mailhost="smtp.exmail.qq.com"
-				user="automated@ptthink.com"
-				password="Ptmind2008"   
+				user="346701339@qq.com"
+				password="!@#QWE1987"   
 				mailport="25" 
 				ssl="false"  
-				from="automated@ptthink.com"
+				from="346701339@qq.com"
 				messagemimetype="text/html" 
 				tolist="${mail_to}"
 				subject="${subject.title}">
-			 <!--attachments 是否将html作为附件，暂屏蔽>
-                <fileset dir="${JP.jmeter.result.html.dir}">
-                    <include name="${JP.ReportName}${time}.html" />					
+			 <!--attachments 是否将html作为附件，暂屏蔽/-->
+                <fileset dir="${jmeter.report.html}">
+                    <include name="${menghunli.ReportName}${time}.html" />					
                 </fileset>
-				<fileset dir="${CN.jmeter.result.html.dir}">
+				<!--fileset dir="${CN.jmeter.result.html.dir}">
                     <include name="${CN.ReportName}${time}.html" />					
                 </fileset>
 				<fileset dir="${COM.jmeter.result.html.dir}">
                     <include name="${COM.ReportName}${time}.html" />
 					<include name="*.png"/>
-                </fileset>
+                </fileset-->
 				
-            </attachments -->
+            </attachments>
 			
-			<message>
+			<!--message>
 			
 			JP interface_check result detail:&lt;br /&gt;
 			http://${reportHost}/${JPreport} &lt;br /&gt;
 			CN interface_check result detail:&lt;br /&gt;
 			http://${reportHost}/${CNreport} &lt;br /&gt;
-			</message>
+			</message-->
 		</mail>
 	</target>
 	
