@@ -104,7 +104,7 @@
 				messagemimetype="text/html" 
 				tolist="${mail_to}"
 				subject="${subject.title}">
-			 <attachments/>
+			 <attachments>
                 <fileset dir="${jmeter.report.html}">
                     <include name="${menghunli.ReportName}${time}.html" />					
                 </fileset>
